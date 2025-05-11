@@ -21,6 +21,7 @@ body {
 }
 
 .filters select,
+.filters label,
 .filters input,
 .filters button {
   padding: 10px;
