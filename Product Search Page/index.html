@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Search Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Search Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Product Search</h1>
-        <div class="filters">
-            <label for="category">Category:</label>
-            <select name="category" id="category">
-                <option value="electronics">Electronics</option>
-                <option value="clothing">Clothing</option>
-                <option value="books">Books</option>
-            </select>
-            <input type="number" id="min-price" placeholder="Min Price">
-            <input type="number" id="max-price" placeholder="Max Price">
-            <button id="search-button" onclick="fetchProducts()">Search</button>
-        </div>
-        <div id="message"></div>
-        <div class="product-list" id="product-list">
+  <div class="container">
+    <h1>Product Search</h1>
+    <div class="filters">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="">All Categories</option>
+        <option value="Beauty">Beauty</option>
+        <option value="Music">Music</option>
+        <option value="Jewelry">Jewelry</option>
+        <option value="Outdoors">Outdoors</option>
+      </select>
+      <input type="number" id="min-price" placeholder="Min Price" />
+      <input type="number" id="max-price" placeholder="Max Price" />
+      <button id="search-button" onclick="fetchProducts()">Search</button>
     </div>
+    <div id="message"></div>
+    <div class="product-list" id="product-list"></div>
+  </div>
 
-
-    <script src="scipt.js"></script>
+  <script src="scipt.js"></script>
 </body>
 </html>
